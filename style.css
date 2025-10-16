@@ -1,0 +1,494 @@
+body {
+    margin: 0px;
+}
+
+/*---------------------------------------------------------top menu bar-------------------------------------------------------*/
+
+ul {
+    list-style-type: none;
+}
+
+.menuss {
+    display: flex;
+    align-items: center;
+}
+
+.menu_bar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    width: 100%;
+    min-width: 990px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 1px 5px #1FA855;
+    top: 0px;
+    z-index: 10;
+    background-color: rgba(255, 255, 255,.6);
+    backdrop-filter: blur(8px);
+}
+
+.menu_bar img {
+    padding-left: 30%;
+    height: 70px;
+    width: 150px;
+}
+.menu_icon li {
+    display: inline;
+    color: #1FA855;
+    margin-left: -20px;
+}
+.menu_icon i {
+    background-color: rgb(228, 228, 228);
+    border-radius: 50%;
+    padding: 8px;
+}
+.menus li {
+    position: relative;
+    display: inline;
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1FA855;
+    height: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li a {
+    color: #1FA855;
+    padding: 10px 15px;
+}
+.menus li a:hover {
+    background-color: #1FA855;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+}
+.menu_icon i:hover {
+    color: rgb(255, 255, 255);
+    background-color: #1FA855;
+    border-radius: 50%;
+}
+.active a {
+    background-color: #1FA855;
+    border-radius: 4px;
+    color: bisque;
+}
+
+
+		/*----------------------------- search box------------------------------------*/
+
+
+.search-container {
+    position: relative;
+	display: flex;
+	margin: 5px;
+	height: 35px;
+	width: 35px;
+    transform: translate(73px,0px);
+    align-items: center;
+    justify-content: center;
+}
+.button {
+	display: inline-block;
+	font-size: 24px;
+	height: 30px;
+	text-align: center;
+	color:#1FA855;
+	text-decoration: none;
+	user-select: none;
+    font-weight: 900;
+}
+
+.mglass {
+	display: inline-block;
+	pointer-events: none;
+	transform: rotate(-45deg);
+    padding: 2px 2px 2px 6px;
+	
+}
+.search {
+	position: absolute;
+	left: 50px;
+	background-color: rgb(255, 255, 255);
+	outline: none;
+	border: 4px solid #ffffff;
+    width: 0%;
+	height: 28px;
+	transition-duration: 0.4s;
+	border-radius: 5px;
+	z-index: -1;
+	font-size: 14px;
+    transform: translate(41px,1px);
+    color: #1FA855;
+}
+
+.search:focus {
+	width: 220px; /* Bar width+1px */
+	padding: 0 16px 0 0;
+    border: 4px solid #1FA855;
+}
+
+.expandright {
+	left:auto;
+	right: 49px; /* Button width-1px */
+}
+
+.expandright:focus {
+	padding: 0 0 0 16px;
+}
+
+.aux:hover {
+	background-color: #1FA855;
+	transition-duration: 0.4s;
+}
+.aux {
+	background-color: #e4e4e4;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+.aux:hover .button {
+	color: #ffffff;
+	transition-duration: 0.4s;
+    cursor: pointer;
+}
+input:focus + .aux {
+	background-color:#1FA855;
+}
+input:focus + .aux > .button {
+	color: white;
+}
+
+
+
+ 		/*-----------------------------end of search box-------------------------------*/
+
+/*---------------------------------------end of menu bar-----------------------------------------------------*/
+
+
+/*---------------------------------------main body home section---------------------------------------------*/
+
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 70px;
+    margin-bottom: 80px;
+    justify-content: center;
+    gap:10%;
+    height: 400px; /* Adjust as needed */
+    background-size: cover;
+    background-position: center;
+    animation: backgroundSlideshow 15s infinite linear; /* Adjust duration and timing */
+    position: relative; /* For positioning content inside */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; /* For text visibility */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+
+@keyframes backgroundSlideshow {
+    0% {
+        background-image: url('image1.jpg');
+    }
+
+    50% {
+        background-image: url('image2.jpg');
+    }
+
+    100% {
+        background-image: url('image1.jpg'); /* Loop back to the first image */
+    }
+}
+
+
+
+.home-ph {
+    color: rgb(0, 255, 47);
+    line-height: .5;
+    text-align: center;
+    text-shadow: 4px 4px #000000;
+    top: -100px;
+    font-size: 3em;
+}
+
+.home-ph p {
+    color: rgb(0, 255, 64);
+    line-height: .5;
+    left: 1%;
+    top: 210px;
+
+}
+
+.home a {
+    background-color: #1FA855;
+    border-radius: 3px;
+    padding: 10px;
+    line-height: 2;
+    color: white;
+}
+
+.food1 {
+    border-radius: 50%;
+    box-shadow: -2px 2px 7px rgb(36, 35, 35), 2px 2px 10px rgb(20, 18, 18);
+    top: 100px;
+
+}
+
+     /*-----------------------------dishes and item list-------------------------------------*/
+
+.dishes>h3,
+.dishes>p {
+    text-align: center;
+    line-height: .8;
+    color: #1FA855;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dishes>p {
+    font-weight: bold;
+}
+
+.all_items {
+    display: flex;
+    flex-wrap: wrap;
+	justify-content:center;
+	gap: 20px;
+}
+
+.items {
+    background-color: rgb(216, 216, 216);
+    height: 220px;
+    width: 20%;
+    min-width: 200px;
+    display: flex;
+    position: relative;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+}
+
+.title {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    line-height: 2;
+    font-weight: bold;
+}
+
+.items a {
+    background-color: #1FA855;
+    color: white;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.items img {
+    width: 190px;
+    height: 130px;
+    position: absolute;
+    top: 28px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: height .4s ease-in-out, width .4s ease-in-out;
+
+}
+
+.cart {
+    position: absolute;
+    right: 8px;
+    bottom: 0px;
+}
+
+.items:hover img {
+    height: 138px;
+    width: 198px;
+}
+
+
+
+.price {
+    position: absolute;
+    left: 15px;
+    bottom: 0px;
+    font-weight: bold;
+}
+
+.rating {
+    margin-top: -5px;
+    margin-left: -3px;
+    color: #1FA855;
+}
+
+.heart {
+    position: absolute;
+    right: 15px;
+    top: -10px;
+    font-weight: bold;
+    color: #1FA855;
+}
+
+	 /*-----------------------------end of dishes and item list-------------------------------------*/
+
+
+ /*-------------------------------------------------footer review and rating-------------------------------------*/
+
+
+.review_head {
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.review {
+    display: flex;
+    padding: 0px 10px;
+}
+
+
+.comments {
+    width: 250px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 60px 20px;
+    margin-left: 20px;
+    border: 1px solid gray;
+    position: relative;
+    overflow: hidden;
+    min-width: 200px;
+}
+
+.comments img {
+    position: absolute;
+    left: 30px;
+    width: 40px;
+    top: 20px;
+}
+
+.comments h4 {
+    position: absolute;
+    left: 90px;
+    top: 10px;
+    min-width: 100px;
+}
+
+.comments p {
+    text-align: justify;
+}
+
+.comments i {
+    font-size: 50px;
+    color: gray;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+
+}
+.rate {
+    min-width: 100px;
+}
+
+.review_form {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #d3d3d3;
+    padding: 20px;
+}
+
+
+}
+
+ /*-----------------------------review form-------------------------------------*/
+
+.review_form h3 {
+    text-align: center;
+    line-height: .5;
+}
+
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #d3d3d3;
+    color: #1FA855;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #1FA855;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #ff3a8c;
+}
+
+.form {
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 20px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+}
+
+textarea {
+    color: #1FA855;
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+
+ /*-----------------------------Contact us section-------------------------------------*/
+
+footer {
+    display: flex;
+    padding: 20px 60px;
+    height: 320px;
+    background-color: rgb(28, 15, 46);
+    color: white;
+    justify-content: center;
+
+}
+
+.contact {
+    padding: 20px 80px;
+    width: 250px;
+    text-align: justify;
+
+}
+
+.rate {
+    margin-left: 70px;
+    margin-top: -1px;
+    color: #1FA855;
+}
