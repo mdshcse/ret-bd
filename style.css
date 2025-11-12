@@ -389,7 +389,7 @@ line-height: 2em;
     list-style-type:disc;
 }
 
- .container{max-width:1300px;margin:32px auto;padding:24px}
+ .container{max-width:1200px;margin:32px auto;padding:24px}
     .logo{width:68px;height:68px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:20px}
     p.lead{color:green;margin-top:6px; text-align:center}
 h1.lead1{text-align:center}
@@ -518,5 +518,6 @@ footer {
     margin-top: -1px;
     color: #1FA855;
 }
+
 
 
