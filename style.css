@@ -17,7 +17,7 @@ ul {
     display: flex;
     align-items: center;
     position: sticky;
-    width: 95%;
+    width: 100%;
     min-width: 1030px;
     justify-content: space-between;
     align-items: center;
@@ -518,6 +518,7 @@ footer {
     margin-top: -1px;
     color: #1FA855;
 }
+
 
 
 
