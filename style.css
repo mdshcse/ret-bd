@@ -498,7 +498,7 @@ textarea {
 
 footer {
     display: flex;
-    padding: 20px 60px;
+    padding: 20px 40px;
     height: 320px;
     background-color: rgb(28, 15, 46);
     color: white;
@@ -518,3 +518,4 @@ footer {
     margin-top: -1px;
     color: #1FA855;
 }
+
