@@ -507,15 +507,16 @@ footer {
 }
 
 .contact {
-    padding: 20px 80px;
-    width: 250px;
+    padding: 20px 70px;
+    width: 240px;
     text-align: justify;
 
 }
 
 .rate {
-    margin-left: 70px;
+    margin-left: 60px;
     margin-top: -1px;
     color: #1FA855;
 }
+
 
